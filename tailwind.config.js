@@ -20,6 +20,9 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      backgroundImage: {
+        'home-bg': "url('https://t3.ftcdn.net/jpg/05/00/10/16/360_F_500101658_Uc546WfqJtaYXOVYZnsetAetYlrvU7Vl.jpg')",
+      }
     },
   },
   plugins: [],
