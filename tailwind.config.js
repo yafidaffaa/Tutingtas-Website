@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       screens: {
         '2xl': '1320px',
-        'sm' : '320px',
+        'sm' : '250px',
       },
       colors: {
         PW: '#ffffff',
