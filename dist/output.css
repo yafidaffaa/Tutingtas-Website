@@ -562,9 +562,9 @@ video {
   padding-left: 16px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 360px) {
   .container {
-    max-width: 400px;
+    max-width: 360px;
   }
 }
 
@@ -1303,7 +1303,7 @@ video {
   color: rgb(209 174 35 / var(--tw-text-opacity));
 }
 
-@media (min-width: 400px) {
+@media (min-width: 360px) {
   .sm\:border-PW {
     --tw-border-opacity: 1;
     border-color: rgb(255 255 255 / var(--tw-border-opacity));
