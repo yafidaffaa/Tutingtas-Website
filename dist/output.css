@@ -1308,6 +1308,11 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(209 174 35 / var(--tw-bg-opacity));
   }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1339,6 +1344,11 @@ video {
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
