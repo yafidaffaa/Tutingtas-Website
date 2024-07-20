@@ -58,6 +58,23 @@
             list-style-type: decimal;
         }
         
+        @keyframes colorChange {
+            0% {
+                color: #436387;
+            }
+            50% {
+                color: #d1ae23;
+            }
+            100% {
+                color: #436387;
+            }
+        }
+
+.color-change {
+    animation: colorChange 5s infinite;
+}
+
+    
     
     </style>
 </head>
@@ -136,7 +153,7 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-start px-4 lg:w-1/2 inline-block bg primary-fade-in primary-fade-in-hidden">
                     <h1 class="text-2xl font-bold pb-4">Visi</h1>
-                    <p class="pt-4 pb-4 text-lg font-medium">Menjadi start-up yang menghadirkan manfaat kepada masyarakat melalui board game inovatif, berkomitmen untuk meningkatkan sinergi sumber daya manusia dengan hiburan yang edukatif.</p>
+                    <p class="pt-4 pb-4 text-lg font-medium">Menjadi perusahaan yang menghadirkan manfaat kepada masyarakat melalui board game inovatif, berkomitmen untuk meningkatkan sinergi sumber daya manusia dengan hiburan yang edukatif.</p>
                     
                 </div>
                 <div class="w-full self-start px-4 lg:w-1/2 inline-block bg secondary-fade-in secondary-fade-in-hidden">
@@ -159,17 +176,17 @@
         </div>
         <div class="container md:overflow-x-auto flex flex-wrap justify-center items-center ">
             <div class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden ">
-                <i class="fas fa-hands-helping text-PY text-4xl mb-2"></i>
+                <i class="fas fa-hands-helping text-PY text-4xl mb-2 color-change"></i>
                 <h1 class="font-semibold text-lg text-PBT">Jaminan kualitas pelayanan</h1>
                 <p class="text-sm text-PB">Memiliki komitmen untuk mengedepankan kepuasan dan target customer.</p>
             </div>
             <div class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden">
-                <i class="fas fa-cogs text-PY text-4xl mb-2"></i>
+                <i class="fas fa-cogs text-PY text-4xl mb-2 color-change"></i>
                 <h1 class="font-semibold text-lg text-PBT">Jaminan kualitas operasional</h1>
                 <p class="text-sm text-PB">Memiliki komitmen untuk memberikan kemudahan dalam mengakses sistem operasional perusahaan.</p>
             </div>
             <div class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden">
-                <i class="fas fa-check-circle text-PY text-4xl mb-2"></i>
+                <i class="fas fa-check-circle text-PY text-4xl mb-2 color-change"></i>
                 <h1 class="font-semibold text-lg text-PBT">Jaminan kualitas produk</h1>
                 <p class="text-sm text-PB">Memiliki komitmen untuk menjaga kualitas produk sesuai standar perusahaan.</p>
             </div>
