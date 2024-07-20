@@ -1277,6 +1277,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-PY:hover {
+  --tw-text-opacity: 1;
+  color: rgb(209 174 35 / var(--tw-text-opacity));
+}
+
 .hover\:backdrop-grayscale-0:hover {
   --tw-backdrop-grayscale: grayscale(0);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
