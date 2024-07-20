@@ -1242,6 +1242,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.hover\:border-PY:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 174 35 / var(--tw-border-opacity));
+}
+
 .hover\:bg-PBM:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(67 99 135 / var(--tw-bg-opacity));
