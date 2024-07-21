@@ -54,6 +54,43 @@
         .list-decimal {
             list-style-type: decimal;
         }
+
+        .text-PMM {
+            color: #FF0000;
+        }
+
+        @keyframes gradientRotation {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a3757, #436387, #d1ae23);
+            background-size: 300% 300%; 
+            animation: gradientRotation 10s ease infinite; 
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+
     
 
     </style>
@@ -205,187 +242,124 @@
                         </ul>
                     </div>
                 </div>
+
+
                 <div class="self-center text-left bg-PW p-4 rounded-lg mb-10 lg:mb-10 border lg:flex gap-10 mx-4">
                     <div class="lg:w-1/2 p-4">
-                        <h1 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Peminjaman dan Pengembalian(tanpa master)</h1>
+                        <h1 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Definisi Layanan</h1>
+                        <ul class="list-decimal list-outside lg:list-outside lg:inline-block secondary-fade-in secondary-fade-in-hidden py-4">
+                            <li class="fontse font-normal secondary-fade-in secondary-fade-in-hidden">Layanan berlangganan ini ditujukan untuk sebuah institusi, terkhusus institusi Pendidikan.</li>
+                            <li class="py-2 fontse font-normal secondary-fade-in secondary-fade-in-hidden">Layanan yang kami tawarkan ini hanya berlaku untuk board game yang kami terbitkan saja, untuk sejauh ini opsi anda hanya Veriy and Valor.</li>
+                            <li class=" fontse font-normal secondary-fade-in secondary-fade-in-hidden">Apa yang institusi dapatkan? 1 set komponen main boardgame Verity and Valor dengan kustomisasi set kartu.  
+                                <span class="text-PMM">*</span>sesuai dengan kesepakatan pihak Tutingtas Creation dengan institusi pendidikan.</li>
+                        </ul>
+
+                        <h1 class=" text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Opsi Berlangganan</h1>
                         <ul class="list-decimal list-outside lg:list-outside lg:inline-block secondary-fade-in secondary-fade-in-hidden">
-                            <li class="py-2 fontse"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Opsi Peminjaman</span>
+                            <li class="py-2 fontse"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Berlangganan 6 Bulan:</span>
                                 <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Isi Formulir Peminjaman:
-                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSchce5ElvNIQzQnf05KopOIhqfb3AFbEXbTQYVgtJo4GS6ghw/viewform" target="_blank" rel="noopener noreferrer" class="text-PBM font-semibold"> Klik disini</a>
-                                    </li>
-                                    <li>Hubungi via WhatsApp:
-                                        <a href="https://api.whatsapp.com/send?phone=628157742759&text=Halo,%20saya%20tertarik%20untuk%20memesan%20board%20game%20kustom." target="_blank" rel="noopener noreferrer" class="text-PBM font-semibold"> Klik disini</a>
-                                    </li>
+                                    <li class="fontse font-normal secondary-fade-in secondary-fade-in-hidden">Konten dapat disesuaikan dengan permintaan institusi.</li>
+                                    <li class="py-2 fontse font-normal secondary-fade-in secondary-fade-in-hidden">Institusi akan menerima satu set board game original buatan kami dengan satu set kartu kustom sesuai permintaaan institusi saat pengiriman set boardgame pertama  
+                                        <span class="text-PMM">*</span>akan ditentukan tanggal pengiriman tiap set saat setelah terjadi kesepakatan berlangganan.</li>
+                                    <li class="fontse font-normal secondary-fade-in secondary-fade-in-hidden">Institusi akan menerima paket kartu baru setiap 3 bulan sekali (Total 3 set) 
+                                        <span class="text-PMM">*</span>+1 set kartu diawal kesepakatan berlangganan dimulai 
+                                        <span class="text-PMM">*</span>+1 set kartu di 3 bulan pertama dan +1 set kartu di 3 bulan terakhir 
+                                        <span class="text-PMM">*</span>update kartu akan diterima institusi maksimal minggu terakhir dibulan yang sudah ditentukan diawal kesepakatan.</li>
+                                    <li class="pt-2 fontse font-normal secondary-fade-in secondary-fade-in-hidden">Jasa pelatihan cara bermain board game akan disediakan disetiap jadwal pengiriman kartu.  
+                                        <span class="text-PMM">*</span>pelatihan secara offline dilakukan saat pengiriman set boardgame pertama. 
+                                        <span class="text-PMM">*</span>pengiriman set kartu berikutnya hingga set kartu terakhir akan difasilitasi pelatihan secara online, berupa video instruksi.</li>
                                 </ul>
                             </li>
-                            <li class="py-2"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Proses Peminjaman:</span>
+                            <li class="py-2 fontse"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Berlangganan 12 Bulan:</span>
                                 <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Pelanggan akan mendatangi lokasi usaha. Lokasi akan dibagikan melalui platform WhatsApp.</li>
-                                    <li>Sebelum menerima board game, pelanggan wajib menyerahkan kartu identitas asli (hanya KTM/KTP yang diperbolehkan).</li>
-                                    <li>Pastikan Board Game dikembalikan dalam kondisi utuh dan bebas cacat.</li>
-                                    <li>Pengembalian Board Game harus sesuai dengan jadwal yang telah disepakati.</li>
+                                    <li class="fontse font-normal secondary-fade-in secondary-fade-in-hidden">Konten dapat disesuaikan dengan permintaan institusi.</li>
+                                    <li class="py-2 fontse font-normal secondary-fade-in secondary-fade-in-hidden">Institusi akan menerima satu set board game original buatan kami dengan satu set kartu kustom sesuai permintaaan institusi saat pengiriman set boardgame pertama  
+                                        <span class="text-PMM">*</span>akan ditentukan tanggal pengiriman tiap set saat setelah terjadi kesepakatan berlangganan.</li>
+                                    <li class="fontse font-normal secondary-fade-in secondary-fade-in-hidden">Institusi akan menerima paket kartu baru setiap 3 bulan sekali (Total 5 set) 
+                                        <span class="text-PMM">*</span>+1 set kartu diawal kesepakatan berlangganan dimulai 
+                                        <span class="text-PMM">*</span>+1 set kartu di 3 bulan pertama, +1 set kartu di 6 bulan berjalan, 1 set kartu di 8 bulan berjalan, 1 set kartu di 12 bulan berjalan. 
+                                        <span class="text-PMM">*</span>update kartu akan diterima institusi maksimal minggu terakhir dibulan yang sudah ditentukan diawal kesepakatan.</li>
+                                    <li class="pt-2 fontse font-normal secondary-fade-in secondary-fade-in-hidden">Jasa pelatihan cara bermain board game akan disediakan disetiap jadwal pengiriman kartu.  
+                                        <span class="text-PMM">*</span>pelatihan secara offline dilakukan saat pengiriman set boardgame pertama 
+                                        <span class="text-PMM">*</span>pengiriman set kartu berikutnya hingga set kartu terakhir akan difasilitasi pelatihan secara online, berupa video instruksi.</li>
                                 </ul>
                             </li>
                         </ul>
-                        <h1 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Peminjaman dan Pengembalian(dengan master)</h1>
-                        <ul class="list-decimal list-outside lg:list-outside lg:inline-block secondary-fade-in secondary-fade-in-hidden">
-                            <li class="py-2 fontse"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Opsi Peminjaman</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Isi Formulir Peminjaman:
-                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSchce5ElvNIQzQnf05KopOIhqfb3AFbEXbTQYVgtJo4GS6ghw/viewform" target="_blank" rel="noopener noreferrer" class="text-PBM font-semibold"> Klik disini</a>
-                                    </li>
-                                    <li>Hubungi via WhatsApp:
-                                        <a href="https://api.whatsapp.com/send?phone=628157742759&text=Halo,%20saya%20tertarik%20untuk%20memesan%20board%20game%20kustom." target="_blank" rel="noopener noreferrer" class="text-PBM font-semibold"> Klik disini</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="py-2"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Proses Peminjaman:</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Master akan mendatangi lokasi yang telah disepakati. Lokasi ini akan dibagikan oleh pelanggan melalui platform WhatsApp.</li>
-                                    <li class="font-medium">Ongkos Kirim:
-                                        <ul class="list-decimal list-outside secondary-fade-in secondary-fade-in-hidden">
-                                            <li>Jarak 0-5 km: Gratis.</li>
-                                            <li>Jarak 5-10 km: Rp 10.000.</li>
-                                            <li>Jarak 10-15 km: Rp 20.000.</li>
-                                            <li>Jarak lebih dari 15 km: Kami hanya melayani penyewaan tanpa master.</li>
-                                        </ul>
-                                    </li>
-                                    <li>Pelanggan diharapkan merespons dengan cepat pada hari yang telah disepakati untuk memudahkan pengiriman dan layanan dari Tutingtas Creation.</li>
-                                </ul>
-                            </li>
-                            <li class="py-2"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Tugas Master:</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Master bertanggung jawab untuk menata board game sebelum permainan dimulai.</li>
-                                    <li>Master memberikan penjelasan tentang cara bermain board game.</li>
-                                    <li>Setelah permainan selesai, master mengemas kembali semua komponen board game.</li>
-                                    <li>Pelanggan berhak memanggil master jika ada kebingungan saat bermain board game.</li>
-                                </ul>
-                            </li>
-                            <li class="py-2"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Pengembalian Board Game:</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Pengembalian board game harus sesuai dengan jadwal yang telah disepakati sebelumnya.</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <h1 class="py-4 text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Biaya Berlangganan</h1>
+                            <ul class="list-decimal list-outside lg:list-outside lg:inline-block secondary-fade-in secondary-fade-in-hidden">
+                                <li class="fontse font-normal secondary-fade-in secondary-fade-in-hidden">Biaya berlangganan akan ditentukan berdasarkan durasi berlangganan dan kebutuhan kustomisasi konten.</li>
+                                <li class="py-2 fontse"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Pembayaran dilakukan total 2 kali:</span>
+                                    <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
+                                        <li class="fontse font-normal secondary-fade-in secondary-fade-in-hidden">uang muka : 50 % dari estimasi biaya total dari riset dan produksi 
+                                            <span class="text-PMM">*</span>ditetapkan di awal kesepakatan pembelian secara berlangganan board game.</li>
+                                        <li class="py-2 fontse font-normal secondary-fade-in secondary-fade-in-hidden">tagihan tersisa : dibayarkan bersamaan dengan pengiriman set board game dan set kartu pertama.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class=" text-left lg:text-left">
+                                <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Pengiriman dan Pengembalian</h2>
+                                <ul class="list-decimal list-outside lg:list-outside lg:inline-block secondary-fade-in secondary-fade-in-hidden py-4">
+                                    <li class="fontse font-normal secondary-fade-in secondary-fade-in-hidden">Pengiriman board game dan paket kartu baru akan dilakukan setiap 3 bulan sekali ke alamat yang telah disepakati.</li>
+                                    <li class="py-2 fontse font-normal secondary-fade-in secondary-fade-in-hidden">Jika terdapat kerusakan pada paket kartu saat diterima, institusi berhak melaporkannya dalam waktu 7 hari kerja untuk melakukan ajuan penggantian.</li>
+                                </ul>                            
+                            </div>
                     </div>
                     <div class="lg:w-1/2 lg:justify-end ">
-                            <img src="../../dist/img/service/srv-penjualan.webp" alt="penjualan board game di event ICCS" class=" rounded-lg mx-auto secondary-fade-in secondary-fade-in-hidden h-fit w-fit">
-                        <h1 class="font-bold text-xl lg:text-2xl pb-4 text-PB secondary-fade-in secondary-fade-in-hidden">Pembelian Board Game dengan Opsi Berlangganan</h1>
-                        <p class="lg:text-lg text-PB secondary-fade-in secondary-fade-in-hidden">Kami menjual Board Game dan anda dapat berlangganan untuk update konten dalam Board Game kami.</p>
+                            <img src="../../dist/img/service/srv-penjualan.webp" alt="penjualan board game di event ICCS" class=" rounded-lg mx-auto secondary-fade-in secondary-fade-in-hidden h-fit w-fit">                        
                         <div class="mt-4 text-left lg:text-left">
-                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Syarat & Ketentuan Peminjaman</h2>
-                            <h3 class="py-2 secondary-fade-in secondary-fade-in-hidden">Para pelanggan yang menggunakan layanan peminjaman wajib mematuhi syarat dan ketentuan berikut ini. Dengan mengajukan permohonan peminjaman, pelanggan dianggap telah membaca dan menyetujui semua ketentuan yang tercantum.</h3>
-                            
-                        </div>
-                        <div class="mt-4 text-left lg:text-left">
-                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Kewajiban Pelanggan</h2>
-                            <ul class="list-disc list-outside lg:list-outside lg:inline-block">
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Jika board game atau komponen rusak atau hilang setelah digunakan, pelanggan wajib menggantinya sesuai dengan nilai barang dalam rupiah.</li>
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pengembalian yang tidak tepat waktu akan dikenakan denda sebesar Rp 35.000 hingga Rp 1.000.000. Tidak ada toleransi, bahkan jika terlambat hanya 1 menit. Nominal denda disesuaikan dengan lamanya keterlambatan pengembalian.</li>
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pelanggan yang sengaja atau tidak sengaja menduplikat karya kami akan dikenakan sanksi sesuai dengan Undang-undang Hak Cipta.</li>
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pelanggan yang melanggar syarat dan ketentuan di atas akan dilarang menggunakan layanan kami dalam jangka waktu tertentu.</li>
+                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Pelatihan dan Dukungan</h2>
+                            <ul class="list-decimal list-outside lg:list-outside lg:inline-block">
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Jasa pelatihan cara bermain board game akan dilakukan oleh tim kami di tempat (saat pengiriman set boardgame pertama) atau secara daring (pengiriman set kartu berikutnya hingga set kartu terakhir).</li>
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Dukungan teknis dan konsultasi akan tersedia selama masa berlangganan.</li>
                             </ul>
                         </div>
                         <div class="mt-4 text-left lg:text-left">
-                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Ketentuan Pembayaran:</h2>
-                            <ul class="list-disc list-outside lg:list-outside lg:inline-block">
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pembayaran wajib dilakukan sebelum layanan dapat diterima oleh pelanggan.</li>
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pelanggan dapat menambah durasi penyewaan dengan membayar Rp 5.000 per kepala. Pembayaran dapat dilakukan melalui metode di atas atau secara tunai (diberikan kepada master board game).</li>
+                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Kustomisasi Konten</h2>
+                            <ul class="list-decimal list-outside lg:list-outside lg:inline-block">
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Permintaan kustomisasi harus disampaikan saat sebelum terjadi kesepakatan berlangganan dimulai.</li>
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Akan dilakukan riset untuk keperluan kustomisasi konten disetiap set kartu, diharapkan institusi dapat memberikan data yang lengkap terkait tema permintaan kustomisasi secara tepat waktu demi kelancaran riset dan produksi.</li>
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Akan dilakukan riset keselutruhan terkait isi konten untuk setiap set kartu diawal setelah terjadinya kesepakatan pembelian berlangganan. 
+                                    <span class="text-PMM">*</span>untuk ajuan penggantian isi konten set kartu setelahnya, institusi diwajibkan melakukan ajuan perubahan minimal 3 bulan sebelum kartu set selanjutnya dikirim. 
+                                    <span class="text-PMM">*</span>Biaya tambahan mungkin dikenakan untuk melakuakan penggantian isi konten.</li>
                             </ul>
+                        </div>
+                        <div class="mt-4 text-left lg:text-left">
+                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Pembatalan Berlangganan</h2>
+                            <ul class="list-decimal list-outside lg:list-outside lg:inline-block">
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Institusi dapat membatalkan pembelian berlangganan dengan pemberitahuan tertulis 1 bulan sebelum dikirimkan set boardgame yang pertama.</li>
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pembelian berlangganan tidak dapat dibatalkan setelah dikirimkan set boardgame yang pertama, biaya yang telah dibayarkan tidak dapat dikembalikan.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 text-left lg:text-left">
+                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Privasi dan Keamanan Data</h2>
+                            <ul class="list-decimal list-outside lg:list-outside lg:inline-block">
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Kami berkomitmen untuk menjaga privasi dan keamanan data institusi.</li>
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Data yang diberikan oleh institusi hanya akan digunakan untuk keperluan layanan berlangganan dan tidak akan dibagikan kepada pihak ketiga tanpa izin.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 text-left lg:text-left">
+                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Perubahan Syarat & Ketentuan</h2>
+                            <ul class="list-decimal list-outside lg:list-outside lg:inline-block">
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Kami berhak untuk mengubah syarat dan ketentuan ini dengan pemberitahuan sebelumnya kepada institusi.</li>
+                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Perubahan akan berlaku efektif setelah pemberitahuan dan institusi dapat memilih untuk melanjutkan atau membatalkan berlangganan berdasarkan syarat dan ketentuan yang baru.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 text-left lg:text-left">
+                            <h2 class="text-base font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Dengan berlangganan layanan kami, institusi menyetujui semua syarat dan ketentuan yang telah ditetapkan. Jika terdapat pertanyaan lebih lanjut, silakan hubungi nomor yang tertera di bawah.</h2>
                         </div>
                     </div>
                     
                 </div>
-                <div class="self-center text-left bg-PW p-4 rounded-lg mb-10 lg:mb-10 border lg:flex gap-10 mx-4">
+
+
+                <div class="self-center text-center p-4 rounded-lg mb-10 lg:mb-10 border lg:flex gap-10 mx-4 gradient-bg">
                     <div class="lg:w-1/2 lg:justify-start ">
                             <img src="../../dist/img/service/srv-customize.webp" alt="customize paper engineering" class=" rounded-lg mx-auto secondary-fade-in secondary-fade-in-hidden h-fit w-fit">
-                        <h1 class="font-bold text-xl lg:text-2xl pb-4 text-PB secondary-fade-in secondary-fade-in-hidden">Customize Board Game</h1>
-                        <p class="lg:text-lg text-PB secondary-fade-in secondary-fade-in-hidden">Kami membuat Board Game untuk mendukung aktivitas pembelajaran, branding, atau sesuai kebutuhan anda.</p>
-                        <div class="mt-4 text-left lg:text-left">
-                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Syarat & Ketentuan Peminjaman</h2>
-                            <h3 class="py-2 secondary-fade-in secondary-fade-in-hidden">Para pelanggan yang menggunakan layanan peminjaman wajib mematuhi syarat dan ketentuan berikut ini. Dengan mengajukan permohonan peminjaman, pelanggan dianggap telah membaca dan menyetujui semua ketentuan yang tercantum.</h3>
-                            
-                        </div>
-                        <div class="mt-4 text-left lg:text-left">
-                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Kewajiban Pelanggan</h2>
-                            <ul class="list-disc list-outside lg:list-outside lg:inline-block">
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Jika board game atau komponen rusak atau hilang setelah digunakan, pelanggan wajib menggantinya sesuai dengan nilai barang dalam rupiah.</li>
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pengembalian yang tidak tepat waktu akan dikenakan denda sebesar Rp 35.000 hingga Rp 1.000.000. Tidak ada toleransi, bahkan jika terlambat hanya 1 menit. Nominal denda disesuaikan dengan lamanya keterlambatan pengembalian.</li>
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pelanggan yang sengaja atau tidak sengaja menduplikat karya kami akan dikenakan sanksi sesuai dengan Undang-undang Hak Cipta.</li>
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pelanggan yang melanggar syarat dan ketentuan di atas akan dilarang menggunakan layanan kami dalam jangka waktu tertentu.</li>
-                            </ul>
-                        </div>
-                        <div class="mt-4 text-left lg:text-left">
-                            <h2 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Ketentuan Pembayaran:</h2>
-                            <ul class="list-disc list-outside lg:list-outside lg:inline-block">
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pembayaran wajib dilakukan sebelum layanan dapat diterima oleh pelanggan.</li>
-                                <li class="py-2 secondary-fade-in secondary-fade-in-hidden">Pelanggan dapat menambah durasi penyewaan dengan membayar Rp 5.000 per kepala. Pembayaran dapat dilakukan melalui metode di atas atau secara tunai (diberikan kepada master board game).</li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="lg:w-1/2 p-4">
-                        <h1 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Peminjaman dan Pengembalian(tanpa master)</h1>
-                        <ul class="list-decimal list-outside lg:list-outside lg:inline-block secondary-fade-in secondary-fade-in-hidden">
-                            <li class="py-2 fontse"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Opsi Peminjaman</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Isi Formulir Peminjaman:
-                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSchce5ElvNIQzQnf05KopOIhqfb3AFbEXbTQYVgtJo4GS6ghw/viewform" target="_blank" rel="noopener noreferrer" class="text-PBM font-semibold"> Klik disini</a>
-                                    </li>
-                                    <li>Hubungi via WhatsApp:
-                                        <a href="https://api.whatsapp.com/send?phone=628157742759&text=Halo,%20saya%20tertarik%20untuk%20memesan%20board%20game%20kustom." target="_blank" rel="noopener noreferrer" class="text-PBM font-semibold"> Klik disini</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="py-2"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Proses Peminjaman:</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Pelanggan akan mendatangi lokasi usaha. Lokasi akan dibagikan melalui platform WhatsApp.</li>
-                                    <li>Sebelum menerima board game, pelanggan wajib menyerahkan kartu identitas asli (hanya KTM/KTP yang diperbolehkan).</li>
-                                    <li>Pastikan Board Game dikembalikan dalam kondisi utuh dan bebas cacat.</li>
-                                    <li>Pengembalian Board Game harus sesuai dengan jadwal yang telah disepakati.</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <h1 class="text-lg font-bold text-PB secondary-fade-in secondary-fade-in-hidden">Peminjaman dan Pengembalian(dengan master)</h1>
-                        <ul class="list-decimal list-outside lg:list-outside lg:inline-block secondary-fade-in secondary-fade-in-hidden">
-                            <li class="py-2 fontse"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Opsi Peminjaman</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Isi Formulir Peminjaman:
-                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSchce5ElvNIQzQnf05KopOIhqfb3AFbEXbTQYVgtJo4GS6ghw/viewform" target="_blank" rel="noopener noreferrer" class="text-PBM font-semibold"> Klik disini</a>
-                                    </li>
-                                    <li>Hubungi via WhatsApp:
-                                        <a href="https://api.whatsapp.com/send?phone=628157742759&text=Halo,%20saya%20tertarik%20untuk%20memesan%20board%20game%20kustom." target="_blank" rel="noopener noreferrer" class="text-PBM font-semibold"> Klik disini</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="py-2"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Proses Peminjaman:</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Master akan mendatangi lokasi yang telah disepakati. Lokasi ini akan dibagikan oleh pelanggan melalui platform WhatsApp.</li>
-                                    <li class="font-medium secondary-fade-in secondary-fade-in-hidden">Ongkos Kirim:
-                                        <ul class="list-decimal list-outside secondary-fade-in secondary-fade-in-hidden">
-                                            <li>Jarak 0-5 km: Gratis.</li>
-                                            <li>Jarak 5-10 km: Rp 10.000.</li>
-                                            <li>Jarak 10-15 km: Rp 20.000.</li>
-                                            <li>Jarak lebih dari 15 km: Kami hanya melayani penyewaan tanpa master.</li>
-                                        </ul>
-                                    </li>
-                                    <li>Pelanggan diharapkan merespons dengan cepat pada hari yang telah disepakati untuk memudahkan pengiriman dan layanan dari Tutingtas Creation.</li>
-                                </ul>
-                            </li>
-                            <li class="py-2"><span class="font-semibold secondary-fade-in secondary-fade-in-hidden">Tugas Master:</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Master bertanggung jawab untuk menata board game sebelum permainan dimulai.</li>
-                                    <li>Master memberikan penjelasan tentang cara bermain board game.</li>
-                                    <li>Setelah permainan selesai, master mengemas kembali semua komponen board game.</li>
-                                    <li>Pelanggan berhak memanggil master jika ada kebingungan saat bermain board game.</li>
-                                </ul>
-                            </li>
-                            <li class="py-2 secondary-fade-in secondary-fade-in-hidden"><span class="font-semibold">Pengembalian Board Game:</span>
-                                <ul class="list-disc list-outside secondary-fade-in secondary-fade-in-hidden">
-                                    <li>Pengembalian board game harus sesuai dengan jadwal yang telah disepakati sebelumnya.</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="lg:w-1/2">
+                        <img src="../../dist/img/service/lb-coming soon.png" alt="penjualan board game di event ICCS" class=" rounded-lg mx-auto secondary-fade-in secondary-fade-in-hidden h-40 w-40">
+                        <h1 class="font-bold text-xl lg:text-2xl pb-4 text-PW secondary-fade-in secondary-fade-in-hidden pulse">Customize Board Game</h1>
+                        <p class="lg:text-lg text-PW secondary-fade-in secondary-fade-in-hidden pulse">Kami membuat Board Game untuk mendukung aktivitas pembelajaran, branding atau sesuai kebutuhan anda.</p>
                     </div>
             </div>
             <div class="w-full self-center px-4 mt-10">
@@ -426,7 +400,7 @@
                 </div>
                 <div class="w-full md:w-1/3 px-4 mb-10 ">
                     <h1 class="font-bold text-xl mb-2 text-slate-300 primary-fade-in primary-fade-in-hidden">Feedback</h1>
-                    <form class="max-w-lg mx-auto secondary-fade-in secondary-fade-in-hidden" action="https://formcarry.com/s/ko2pLMchMo2" method="POST">
+                    <form class="max-w-lg mx-auto secondary-fade-in secondary-fade-in-hidden" action="https://formcarry.com/s/ZiT3_0iSO0W" method="POST">
                         <div class="mb-4">
                             <label for="name" class="block text-PY font-bold mb-2">Name<span class="text-PBM">*</span></label>
                             <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline bg-gray-200" required>

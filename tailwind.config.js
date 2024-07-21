@@ -17,7 +17,6 @@ module.exports = {
         PBM: '#436387',
         PBT: '#0a3757',
         PB: '#000000',
-        P: '#FF0000',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
