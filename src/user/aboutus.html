@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tutingtas Creation hadir sebagai solusi kreatif untuk perusahaan, organisasi dan masyarakat umum dengan memenuhi kebutuhan branding dan meningkatkan ikatan antar individu dengan inovasi board game.">
-    <title>About Us</title>
+    <meta name="description"
+        content="Tutingtas Creation adalah ahli dalam menciptakan board game kustom untuk branding dan penguatan ikatan komunitas. Temukan bagaimana kami membantu perusahaan dan organisasi mencapai tujuan mereka dengan kreativitas dan inovasi.">
+    <title>About Us - Tutingtas Creation | Innovating Branding with Custom Board Games</title>
+    <meta name="keywords"
+        content="Tutingtas Creation, custom board games, branding, community engagement, creative solutions, tentang tutingtas">
     <link rel="stylesheet" href="../../dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="../../dist/img/icon-tutingtas.webp">
 
     <style>
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translatex(300px); 
+                transform: translatex(300px);
             }
+
             to {
                 opacity: 1;
                 transform: translatex(-100px);
@@ -26,7 +32,7 @@
         }
 
         .primary-fade-in {
-            opacity: 1; 
+            opacity: 1;
             transform: translateX(0);
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
         }
@@ -37,7 +43,7 @@
         }
 
         .secondary-fade-in {
-            opacity: 1; 
+            opacity: 1;
             transform: translateX(0);
             transition: opacity 1s ease-in-out, transform 1s ease-in-out;
         }
@@ -50,21 +56,25 @@
         .list-disc {
             list-style-type: disc;
         }
+
         .list-outside {
             list-style-position: outside;
-            margin-left: 2rem; 
+            margin-left: 2rem;
         }
+
         .list-decimal {
             list-style-type: decimal;
         }
-        
+
         @keyframes colorChange {
             0% {
                 color: #436387;
             }
+
             50% {
                 color: #d1ae23;
             }
+
             100% {
                 color: #436387;
             }
@@ -74,39 +84,66 @@
             animation: colorChange 5s infinite;
         }
 
+        .text-PMM {
+            color: #FF0000;
+        }
     </style>
 </head>
+
 <body>
-    
+
     <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10  font-poppins ">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-20 font-poppins">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="" class="font-bold text-lg text-orange-500 py-6 block">
-                        <img src="../../dist/img/logo-white.webp" alt="logo" class="w-28 h-auto lg:w-36">
+                    <a href="" class="font-bold text-lg text-PB py-6 block">
+                        <img src="../../dist/img/logo-white.webp" alt="logo tutiingtas creation"
+                            class="w-28 h-auto lg:w-36">
                     </a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="humberger" name="humberger" type="button" class="block absolute right-4 lg:hidden" aria-label="Toggle Navigation">
+                    <button id="humberger" name="humberger" type="button" class="block absolute right-4 lg:hidden"
+                        aria-label="Toggle Navigation">
                         <span class="humberger-line transition duration-300 ease-in-out origin-top-right"></span>
                         <span class="humberger-line transition duration-300 ease-in-out"></span>
-                        <span class="humberger-line transition duration-300 ease-in-out origin-bottom-right "></span>
+                        <span class="humberger-line transition duration-300 ease-in-out origin-bottom-right"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-PW shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-PW shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="../../index.html" class="text-base text-PB lg:text-PW py-2 mx-8 group-hover:text-PY flex font-semibold">Home</a>
+                                <a href="../../index.html"
+                                    class="text-base text-PB lg:text-PW py-2 mx-8 group-hover:text-PY flex font-semibold transition-all duration-500">Home</a>
                             </li>
                             <li class="group">
-                                <a href="aboutus.html" class="text-base text-PB lg:text-PW py-2 mx-8 group-hover:text-PY flex font-semibold">About Us</a>
+                                <a href="../../src/user/aboutus.html"
+                                    class="text-base text-PB lg:text-PW py-2 mx-8 group-hover:text-PY flex font-semibold transition-all duration-500">About
+                                    Us</a>
+                            </li>
+                            <li class="group relative">
+                                <button id="services-toggle"
+                                    class="text-base text-PB lg:text-PW py-2 mx-8 flex font-semibold transition-all duration-500 group-hover:text-PY">Services</button>
+                                <ul id="services-dropdown"
+                                    class="absolute  lg:top-full lg:left-0 lg:w-auto hidden  bg-PW  shadow-lg rounded-lg p-3 transition-all duration-500">
+                                    <li>
+                                        <a href="services/penyewaan.html"
+                                            class="text-base text-PB lg:text-PB py-2 mx-8 flex font-semibold transition-all duration-500 hover:text-PY">Penyewaan</a>
+                                    </li>
+                                    <li>
+                                        <a href="services/pembelian.html"
+                                            class="text-base text-PB lg:text-PB py-2 mx-8 flex font-semibold transition-all duration-500 hover:text-PY">Pembelian</a>
+                                    </li>
+                                    <li>
+                                        <a href="services/customize.html"
+                                            class="text-base text-PB lg:text-PB py-2 mx-8 flex font-semibold transition-all duration-500 hover:text-PY">Customize</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="group">
-                                <a href="service.html" class="text-base text-PB lg:text-PW py-2 mx-8 group-hover:text-PY flex font-semibold">Services</a>
-                            </li>
-                            <li class="group">
-                                <a href="news.html" class="text-base text-PB lg:text-PW py-2 mx-8 group-hover:text-PY flex font-semibold">News</a>
+                                <a href="../../src/user/news.html"
+                                    class="text-base text-PB lg:text-PW py-2 mx-8 group-hover:text-PY flex font-semibold transition-all duration-500">News</a>
                             </li>
                         </ul>
                     </nav>
@@ -123,8 +160,17 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4">
                     <h1 class="text-PW text-4xl font-bold primary-fade-in primary-fade-in-hidden">Tentang Kami</h1>
-                    <p class="font-light  mt-4 leading-relaxed text-PW secondary-fade-in secondary-fade-in-hidden">Start-up yang bergerak di bidang jasa, pariwisata, dan perdagangan. Fokus kami adalah <span class="text-PY font-bold">menciptakan permainan</span> papan sebagai media <span class="text-PY font-bold">pengembangan diri</span> untuk sebuah komunitas atau individu dengan cara yang unik, kreatif, menghibur, sekaligus mempererat ikatan antar individu. Kami juga menciptakan inovasi permainan papan yang dapat mendukung aktivitas <span class="text-PY font-bold">branding perusahaan atau branding perseorangan</span>. Dengan tagline kami yakni, <span class="text-PY font-bold">“Engage, Entertain, and Eduate”</span> kami berkomitmen untuk selalu menciptakan permainan papan yang memberikan kontribusi dalam mewujudkan SDGs 4 yakni pendidikan berkualitas.</p>
-                    
+                    <p class="font-light  mt-4 leading-relaxed text-PW secondary-fade-in secondary-fade-in-hidden">
+                        Start-up yang bergerak di bidang jasa, pariwisata, dan perdagangan. Fokus kami adalah <span
+                            class="text-PY font-bold">menciptakan permainan</span> papan sebagai media <span
+                            class="text-PY font-bold">pengembangan diri</span> untuk sebuah komunitas atau individu
+                        dengan cara yang unik, kreatif, menghibur, sekaligus mempererat ikatan antar individu. Kami juga
+                        menciptakan inovasi permainan papan yang dapat mendukung aktivitas <span
+                            class="text-PY font-bold">branding perusahaan atau branding perseorangan</span>. Dengan
+                        tagline kami yakni, <span class="text-PY font-bold">“Engage, Entertain, and Eduate”</span> kami
+                        berkomitmen untuk selalu menciptakan permainan papan yang memberikan kontribusi dalam mewujudkan
+                        SDGs 4 yakni pendidikan berkualitas.</p>
+
                 </div>
             </div>
         </div>
@@ -137,7 +183,8 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-end px-4">
                     <div class="mt-10 secondary-fade-in secondary-fade-in-hidden">
-                        <img class="mt-4 items-center lg:right-0 w-fit h-auto rounded-lg" src="../../dist/img/aboutus.webp" alt="">
+                        <img class="mt-4 items-center lg:right-0 w-fit h-auto rounded-lg"
+                            src="../../dist/img/aboutus.webp" alt="full team tutingtas creation">
                     </div>
                 </div>
             </div>
@@ -151,16 +198,22 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-start px-4 lg:w-1/2 inline-block bg primary-fade-in primary-fade-in-hidden">
                     <h1 class="text-2xl font-bold pb-4">Visi</h1>
-                    <p class="pt-4 pb-4 text-lg font-medium">Menjadi perusahaan yang menghadirkan manfaat kepada masyarakat melalui board game inovatif, berkomitmen untuk meningkatkan sinergi sumber daya manusia dengan hiburan yang edukatif.</p>
-                    
+                    <p class="pt-4 pb-4 text-lg font-medium">Menjadi perusahaan yang menghadirkan manfaat kepada
+                        masyarakat melalui board game inovatif, berkomitmen untuk meningkatkan sinergi sumber daya
+                        manusia dengan hiburan yang edukatif.</p>
+
                 </div>
                 <div class="w-full self-start px-4 lg:w-1/2 inline-block bg secondary-fade-in secondary-fade-in-hidden">
                     <h1 class="text-2xl font-bold pb-4">Misi</h1>
                     <ul class="list-disc list-outside space-y-2 pt-4 pb-4 text-lg font-medium">
-                        <li class="mb-4">Menghadirkan permainan kreatif dan inovatif yang terus menggemparkan industri.</li>
-                        <li class="mb-4">Menawarkan pengalaman bermain yang mendidik, memfasilitasi pembelajaran bahasa asing, public speaking, dan keterampilan lainnya dengan cara yang menyenangkan.</li>
-                        <li class="mb-4">Membangun konektivitas dan hubungan positif melalui permainan yang kami ciptakan.</li>
-                        <li class="mb-4">Aktif berkontribusi pada masyarakat dengan mendukung inisiatif pendidikan dan keberlanjutan.</li>
+                        <li class="mb-4">Menghadirkan permainan kreatif dan inovatif yang terus menggemparkan industri.
+                        </li>
+                        <li class="mb-4">Menawarkan pengalaman bermain yang mendidik, memfasilitasi pembelajaran bahasa
+                            asing, public speaking, dan keterampilan lainnya dengan cara yang menyenangkan.</li>
+                        <li class="mb-4">Membangun konektivitas dan hubungan positif melalui permainan yang kami
+                            ciptakan.</li>
+                        <li class="mb-4">Aktif berkontribusi pada masyarakat dengan mendukung inisiatif pendidikan dan
+                            keberlanjutan.</li>
                     </ul>
                 </div>
             </div>
@@ -169,24 +222,33 @@
 
     <section id="blog" class="bg-gray-800 p-5 font-poppins justify-center items-center flex flex-wrap">
         <div class="w-full self-center lg:px-20 primary-fade-in primary-fade-in-hidden">
-            <h1 class="justify-center items-center text-center font-bold text-2xl bg-PB text-PW p-4">EXPLORE OUR <span class="text-PY font-bold">TEAM</span></h1>
-            <p class="text-center p-5 px-20 m-5 secondary-fade-in secondary-fade-in-hidden">Tutingtas Creation berkomitmen untuk terus menaikkan kualitas individu-individu tim untuk memenuhi kebutuhan dan ekspekatsi anda. Kami memahami bahwa setiap klien unik, dan itulah mengapa kami selalu berusaha untuk memberikan solusi yang khusus dan tepat sasaran.</p>    
+            <h1 class="justify-center items-center text-center font-bold text-2xl bg-PB text-PW p-4">EXPLORE OUR <span
+                    class="text-PY font-bold">TEAM</span></h1>
+            <p class="text-center p-5 px-20 m-5 secondary-fade-in secondary-fade-in-hidden">Tutingtas Creation
+                berkomitmen untuk terus menaikkan kualitas individu-individu tim untuk memenuhi kebutuhan dan ekspekatsi
+                anda. Kami memahami bahwa setiap klien unik, dan itulah mengapa kami selalu berusaha untuk memberikan
+                solusi yang khusus dan tepat sasaran.</p>
         </div>
         <div class="container md:overflow-x-auto flex flex-wrap justify-center items-center ">
-            <div class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden ">
+            <div
+                class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden ">
                 <i class="fas fa-hands-helping text-PY text-4xl mb-2 color-change"></i>
                 <h1 class="font-semibold text-lg text-PBT">Jaminan kualitas pelayanan</h1>
                 <p class="text-sm text-PB">Memiliki komitmen untuk mengedepankan kepuasan dan target customer.</p>
             </div>
-            <div class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden">
+            <div
+                class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden">
                 <i class="fas fa-cogs text-PY text-4xl mb-2 color-change"></i>
                 <h1 class="font-semibold text-lg text-PBT">Jaminan kualitas operasional</h1>
-                <p class="text-sm text-PB">Memiliki komitmen untuk memberikan kemudahan dalam mengakses sistem operasional perusahaan.</p>
+                <p class="text-sm text-PB">Memiliki komitmen untuk memberikan kemudahan dalam mengakses sistem
+                    operasional perusahaan.</p>
             </div>
-            <div class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden">
+            <div
+                class="w-80 self-center bg-PW rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-5 border-4 border-PY secondary-fade-in secondary-fade-in-hidden">
                 <i class="fas fa-check-circle text-PY text-4xl mb-2 color-change"></i>
                 <h1 class="font-semibold text-lg text-PBT">Jaminan kualitas produk</h1>
-                <p class="text-sm text-PB">Memiliki komitmen untuk menjaga kualitas produk sesuai standar perusahaan.</p>
+                <p class="text-sm text-PB">Memiliki komitmen untuk menjaga kualitas produk sesuai standar perusahaan.
+                </p>
             </div>
         </div>
     </section>
@@ -194,48 +256,81 @@
     <!-- Why Need Section End -->
 
     <section id="blog" class="bg-gray-800 p-5 font-poppins justify-center items-center flex flex-wrap">
-        <h1 class="justify-center items-center text-center font-bold text-2xl text-PB primary-fade-in primary-fade-in-hidden">Tutingtas Team</h1>
+        <h1
+            class="justify-center items-center text-center font-bold text-2xl text-PB primary-fade-in primary-fade-in-hidden">
+            Tutingtas Team</h1>
         <div class="container md:overflow-x-auto flex flex-wrap justify-center items-center">
             <div class="w-80 self-center bg-transparent rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-2">
-                <img src="../../dist/img/team/raisa.webp" alt="Article Image" class="w-full h-auto object-cover rounded-md mb-3 secondary-fade-in secondary-fade-in-hidden">
+                <img src="../../dist/img/team/raisa.webp" alt="Isna Raisa - Founder / Chief Marketing Officer"
+                    loading="lazy"
+                    class="w-full h-auto object-cover rounded-md mb-3 secondary-fade-in secondary-fade-in-hidden">
                 <h1 class="font-semibold text-lg text-PB secondary-fade-in secondary-fade-in-hidden">
-                    <a href="https://www.instagram.com/presdir_e?igsh=MWc1Z3d1YjdoNWt1dQ==" target="_blank" rel="noopener noreferrer">Isna Raisa</a></h1>
-                <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Founder / Chief Marketing Officer</p>
+                    <a href="https://www.instagram.com/presdir_e?igsh=MWc1Z3d1YjdoNWt1dQ==" target="_blank"
+                        rel="noopener noreferrer">Isna Raisa</a>
+                </h1>
+                <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Founder / Chief Marketing Officer
+                </p>
             </div>
             <div class="w-80 self-center bg-transparent rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-2">
-                <img src="../../dist/img/team/ayu.webp" alt="Article Image" class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden"> 
+                <img src="../../dist/img/team/ayu.webp" alt="Aisyah Sekar Ayu - Co-Founder / Chief Executive Officer"
+                    loading="lazy"
+                    class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
                 <h1 class="font-semibold text-lg text-PB secondary-fade-in secondary-fade-in-hidden">
-                    <a href="https://www.instagram.com/as_ayuk?igsh=MXRlb3F0NmhuMjhjaw==" target="_blank" rel="noopener noreferrer">Aisyah Sekar Ayu</a></h1>
-                <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Co-Founder / Chief Executive Officer</p>
+                    <a href="https://www.instagram.com/as_ayuk?igsh=MXRlb3F0NmhuMjhjaw==" target="_blank"
+                        rel="noopener noreferrer">Aisyah Sekar Ayu</a>
+                </h1>
+                <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Co-Founder / Chief Executive
+                    Officer</p>
             </div>
             <div class="w-80 self-center bg-transparent rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-2">
-                <img src="../../dist/img/team/yafi.webp" alt="Article Image" class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
+                <img src="../../dist/img/team/yafi.webp"
+                    alt="Yafi Daffa Andriansyah - Co-Founder / Chief Teknologi Officer" loading="lazy"
+                    class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
                 <h1 class="font-semibold text-lg text-PB secondary-fade-in secondary-fade-in-hidden">
-                    <a href="https://www.instagram.com/yafidaffaaa?igsh=MmFqa3h0ODBxOHFv" target="_blank" rel="noopener noreferrer">Yafi Daffa Andriansyah</a></h1>
-                <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Co-Founder / Chief Teknologi Officer</p>
+                    <a href="https://www.instagram.com/yafidaffaaa?igsh=MmFqa3h0ODBxOHFv" target="_blank"
+                        rel="noopener noreferrer">Yafi Daffa Andriansyah</a>
+                </h1>
+                <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Co-Founder / Chief Teknologi
+                    Officer</p>
             </div>
             <div class="w-80 self-center bg-transparent rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-2">
-                <img src="../../dist/img/team/zahra.webp" alt="Article Image" class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
+                <img src="../../dist/img/team/zahra.webp" alt="Azzahra Mahesa Puti - Chief Finance Officer"
+                    loading="lazy"
+                    class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
                 <h1 class="font-semibold text-lg text-PB secondary-fade-in secondary-fade-in-hidden">
-                    <a href="https://www.instagram.com/zzhrputi?igsh=ZDN1ajJwOHpuNWVm" target="_blank" rel="noopener noreferrer">Azzahra Mahesa Puti</a></h1>
+                    <a href="https://www.instagram.com/zzhrputi?igsh=ZDN1ajJwOHpuNWVm" target="_blank"
+                        rel="noopener noreferrer">Azzahra Mahesa Puti</a>
+                </h1>
                 <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Chief Finance Officer</p>
             </div>
             <div class="w-80 self-center bg-transparent rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-2">
-                <img src="../../dist/img/team/yaya.webp" alt="Article Image" class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
+                <img src="../../dist/img/team/yaya.webp" alt="Yahya Fadhilatun Khasanah - Chief Operating Officer"
+                    loading="lazy"
+                    class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
                 <h1 class="font-semibold text-lg text-PB secondary-fade-in secondary-fade-in-hidden">
-                    <a href="https://www.instagram.com/yayyaf_?igsh=MXc3d2oxZmM2cGE5YQ==" target="_blank" rel="noopener noreferrer">Yahya Fadhilatun Khasanah</a></h1>
+                    <a href="https://www.instagram.com/yayyaf_?igsh=MXc3d2oxZmM2cGE5YQ==" target="_blank"
+                        rel="noopener noreferrer">Yahya Fadhilatun Khasanah</a>
+                </h1>
                 <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Chief Operating Officer</p>
             </div>
             <div class="w-80 self-center bg-transparent rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-2">
-                <img src="../../dist/img/team/sheila.webp" alt="Article Image" class="w-full h-auto object-cover rounded-md mb- primary-fade-in primary-fade-in-hidden3">
+                <img src="../../dist/img/team/sheila.webp" alt="Rheznandya Sheila Azahra - Design Manager"
+                    loading="lazy"
+                    class="w-full h-auto object-cover rounded-md mb- primary-fade-in primary-fade-in-hidden3">
                 <h1 class="font-semibold text-lg text-PB secondary-fade-in secondary-fade-in-hidden">
-                    <a href="https://www.instagram.com/r.sheilaa?igsh=MWZtNml5NXVva3B6eA==" target="_blank" rel="noopener noreferrer">Rheznandya Sheila Azahra</a></h1>
+                    <a href="https://www.instagram.com/r.sheilaa?igsh=MWZtNml5NXVva3B6eA==" target="_blank"
+                        rel="noopener noreferrer">Rheznandya Sheila Azahra</a>
+                </h1>
                 <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Design Manager</p>
             </div>
             <div class="w-80 self-center bg-transparent rounded-md m-5 flex-shrink-0 drop-shadow-2xl p-2">
-                <img src="../../dist/img/team/kiver.webp" alt="Article Image" class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
+                <img src="../../dist/img/team/kiver.webp" alt="Daniel Kiver Charista - Daniel Kiver Charista"
+                    loading="lazy"
+                    class="w-full h-auto object-cover rounded-md mb-3 primary-fade-in primary-fade-in-hidden">
                 <h1 class="font-semibold text-lg text-PB secondary-fade-in secondary-fade-in-hidden">
-                    <a href="https://www.instagram.com/d_kiver?igsh=ZDZuNGhhdThqYnVs" target="_blank" rel="noopener noreferrer">Daniel Kiver Charista</a></h1>
+                    <a href="https://www.instagram.com/d_kiver?igsh=ZDZuNGhhdThqYnVs" target="_blank"
+                        rel="noopener noreferrer">Daniel Kiver Charista</a>
+                </h1>
                 <p class="text-sm text-PBT secondary-fade-in secondary-fade-in-hidden">Sosial Media Specialist</p>
             </div>
         </div>
@@ -245,39 +340,61 @@
 
     <footer id="contact" class="bg-PB pt-10 pb-12">
         <div class="container">
-            <a href="#home" class="font-bold text-lg text-orange-500 py-6 block grayscale px-4 primary-fade-in primary-fade-in-hidden">
-                <img src="../../dist/img/logo-white.webp" alt="logo" class="w-44 h-auto lg:w-60">
+            <a href="#home"
+                class="font-bold text-lg text-orange-500 py-6 block grayscale px-4 primary-fade-in primary-fade-in-hidden">
+                <img src="../../dist/img/logo-white.webp" alt="logo tutingtas creation" class="w-44 h-auto lg:w-60">
             </a>
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-7 text-slate-300 font-medium md:w-1/3">
-                    <h1 class="font-bold text-lg mb-2 primary-fade-in primary-fade-in-hidden">Address</h1>
-                    
-                    <p class="secondary-fade-in secondary-fade-in-hidden">Jl. Rajawali No.82, Ngebel, Tamantirto (Pagar Hitam Rumah)</p>
+                    <h1 class="font-bold text-xl pb-4 primary-fade-in primary-fade-in-hidden">Address</h1>
+
+                    <p class="secondary-fade-in secondary-fade-in-hidden">Jl. Rajawali No.82, Ngebel, Tamantirto (Pagar
+                        Hitam Rumah)</p>
                     <p class="secondary-fade-in secondary-fade-in-hidden">Kab. Bantul, Kasihan</p>
                     <p class="secondary-fade-in secondary-fade-in-hidden">DI Yogyakarta, ID.55181</p>
                 </div>
                 <div class="w-full px-4 mb-7 text-slate-300 font-medium md:w-1/3">
-                    <h1 class="font-bold text-xl mb-2 primary-fade-in primary-fade-in-hidden">Contact Us</h1>
-                    <p class="secondary-fade-in secondary-fade-in-hidden hover:text-PY transition-all duration-500"><a href="https://api.whatsapp.com/send?phone=628157742759&text=Halo,%20saya%20tertarik%20untuk%20memesan%20board%20game%20kustom." target="_blank" rel="noopener noreferrer">+62 815 7742 759</a></p>
+                    <h1 class="font-bold text-xl pb-4 primary-fade-in primary-fade-in-hidden">Contact Us</h1>
+                    <p class="secondary-fade-in secondary-fade-in-hidden hover:text-PY transition-all duration-500"><a
+                            href="https://api.whatsapp.com/send?phone=628157742759&text=Halo,%20saya%20tertarik%20untuk%20memesan%20board%20game%20kustom."
+                            target="_blank" rel="noopener noreferrer">+62 815 7742 759</a></p>
                     <p class="secondary-fade-in secondary-fade-in-hidden">tutingtascreation@gmail.com</p>
+
+                    <h1 class="font-bold text-xl py-4 primary-fade-in primary-fade-in-hidden">Terms & Condition</h1>
+                    <p class="secondary-fade-in secondary-fade-in-hidden hover:text-PY transition-all duration-500"><a
+                            href="terms-of-service.html" target="_blank" rel="noopener noreferrer">Terms Of Service</a>
+                    </p>
+
                 </div>
                 <div class="w-full md:w-1/3 px-4 mb-10 ">
-                    <h1 class="font-bold text-xl mb-2 text-slate-300 primary-fade-in primary-fade-in-hidden">Feedback</h1>
-                    <form class="max-w-lg mx-auto secondary-fade-in secondary-fade-in-hidden" action="https://formcarry.com/s/ZiT3_0iSO0W" method="POST">
+                    <h1 class="font-bold text-xl pb-4 text-slate-300 primary-fade-in primary-fade-in-hidden">Feedback
+                    </h1>
+                    <form class="max-w-lg mx-auto secondary-fade-in secondary-fade-in-hidden"
+                        action="https://formcarry.com/s/ZiT3_0iSO0W" method="POST">
                         <div class="mb-4">
-                            <label for="name" class="block text-PY font-bold mb-2">Name<span class="text-PBM">*</span></label>
-                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline bg-gray-200" required>
+                            <label for="name" class="block text-PY font-bold mb-2">Name<span
+                                    class="text-PMM">*</span></label>
+                            <input type="text" id="name" name="name"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
+                                required>
                         </div>
                         <div class="mb-4">
-                            <label for="email" class="block text-PY font-bold mb-2">Email<span class="text-PBM">*</span></label>
-                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline bg-gray-200" required>
+                            <label for="email" class="block text-PY font-bold mb-2">Email<span
+                                    class="text-PMM">*</span></label>
+                            <input type="email" id="email" name="email"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
+                                required>
                         </div>
                         <div class="mb-4">
-                            <label for="message" class="block text-PY font-bold mb-2">Message<span class="text-PBM">*</span></label>
-                            <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline bg-gray-200" required></textarea>
+                            <label for="message" class="block text-PY font-bold mb-2">Message<span
+                                    class="text-PMM">*</span></label>
+                            <textarea id="message" name="message" rows="5"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline bg-gray-200"
+                                required></textarea>
                         </div>
                         <div class="flex items-center justify-center">
-                            <button type="submit" class="bg-PY hover:bg-PBM text-PB hover:text-PW font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-500">
+                            <button type="submit"
+                                class="bg-PY hover:bg-PBM text-PB hover:text-PW font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-500">
                                 Submit
                             </button>
                         </div>
@@ -285,11 +402,14 @@
                 </div>
                 <div class="w-full pt-5 border-t border-white px-4 secondary-fade-in secondary-fade-in-hidden">
                     <div class=" flexitems-center justify-center my-5">
-                        <p class="text-white justify-center items-center flex">&copy; PT. Tutingtas Creation Indonesia. All rights reserved. Made with ❤️ in Indonesia.</p>
+                        <p class="text-white justify-center items-center flex">&copy; PT. Tutingtas Creation Indonesia.
+                            All rights reserved. Made with ❤️ in Indonesia.</p>
                     </div>
                     <div class="flex items-center justify-center">
-                        <a href="https://www.instagram.com/tutingtascreation?igsh=MTczdGkzMXprdm15bQ==" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full flex justify-center items-center border border-slate-500 p-2 bg-PW hover:border-PW hover:bg-PW hover:backdrop-grayscale-0 mx-3 transition-all duration-500">
-                            <img src="../../dist/img/img-sosmed/instagram.webp" alt="Instagram">
+                        <a href="https://www.instagram.com/tutingtascreation?igsh=MTczdGkzMXprdm15bQ==" target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-9 h-9 rounded-full flex justify-center items-center border border-slate-500 p-2 bg-PW hover:border-PW hover:bg-PW hover:backdrop-grayscale-0 mx-3 transition-all duration-500">
+                            <img src="../../dist/img/img-sosmed/instagram.webp" alt="Instagram tutingtas creation">
                         </a>
                         <!-- <a href="" class="w-9 h-9 rounded-full flex justify-center items-center border border-slate-500 p-2 bg-PW hover:border-PW hover:bg-PW hover:backdrop-grayscale-0 mx-3">
                             <img src="../../dist/img/img-sosmed/tiktok.png" alt="" class=" grayscale">
@@ -308,4 +428,5 @@
 
     <script src="../../dist/js/script.js"></script>
 </body>
+
 </html>

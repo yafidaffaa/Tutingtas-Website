@@ -45,3 +45,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
         observer.observe(el);
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const servicesToggle = document.getElementById('services-toggle');
+    const servicesDropdown = document.getElementById('services-dropdown');
+
+    servicesToggle.addEventListener('click', () => {
+        if (servicesDropdown.classList.contains('hidden')) {
+            servicesDropdown.classList.remove('hidden');
+        } else {
+            servicesDropdown.classList.add('hidden');
+        }
+    });
+
+    // Optional: Close the dropdown if clicking outside
+    document.addEventListener('click', (event) => {
+        if (!servicesToggle.contains(event.target) && !servicesDropdown.contains(event.target)) {
+            servicesDropdown.classList.add('hidden');
+        }
+    });
+});
